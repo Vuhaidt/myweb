@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bình luận - XYZ</title>
+</head>
+<body>
+    <form method='GET'>
+        <input value='<?php echo $username ?>' type="text" name="username" placeholder="Please username which you want to find">
+        <button type="submit">Find</button>
+    </form>
+    <div class="usf">
+        <?php
+            echo $usf
+        ?>
+    </div>
+    <div class="comment-section">
+        <?php echo $content ?>
+    </div>
+</body>
+</html>
