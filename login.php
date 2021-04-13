@@ -1,4 +1,4 @@
-?php
+<?php
 $Host= '192.168.1.8';
 $Dbname= 'app';
 $User= 'yyy';
