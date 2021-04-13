@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bình luận - XYZ</title
+</head>
+<body>
 <?php 
 
     // Bản quyền © 2020 bởi tienminhvy.com, bảo lưu mọi quyền
@@ -43,26 +51,18 @@
     }
 
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bình luận - XYZ</title>
-</head>
-<body>
-    <div class="cmt-section">
-        <h2>Comment Section</h2>
+    <form method='GET'>
+        <input value='<?php echo $username ?>' type="text" name="username" placeholder="Please username which you want to find">
+        <button type="submit">Find</button>
+    </form>
+    <div class="usf">
+        <?php
+            echo $usf
+        ?>
+    </div>
+    <div class="comment-section">
         <?php echo $content ?>
     </div>
-    <div class="cmt-form">
-        <form method='POST'>
-            <h2>Comment Form</h2>
-            <input type="text" name="username" placeholder="Your username"><br>
-            <textarea name="msg" cols="30" rows="10" placeholder="Your comment here"></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </div>
+
 </body>
 </html>
